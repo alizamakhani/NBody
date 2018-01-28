@@ -1,13 +1,18 @@
-Name: [firstname lastname]
-NetID: [abc123]
-Hours Spent: [Give an exact (decimal) number here]
-Consulted With: [Provide a comma-separated list of the NetIDs of any students, TAs, or professors you consulted with on the assignment. If you did not consult with anyone, you must explicitly write NONE.]
-Resources Used: [Any books, papers, or online resources. If you did not use any outside resources, you must explicitly write NONE]
+Name: [Aliza Makhani]
+NetID: [am491]
+Hours Spent: [6.5]
+Consulted With: [NONE]
+Resources Used: [Piazza, Stack Overflow]
 %%%%
-Impressions: [Your answer here]
+Impressions: [It was fun, covered a lot of concepts and satisfying in the end when it works!]
 %%%%
 Question 1: What is the final position of the planets after 1,000,000 and 
 2,000,000 seconds with a timestep of 25,000 using planets.txt?
+1,000,000 seconds (x,y): Earth (1.4657e11, 2.9604e10), Mars(2.2659e+11,2.4055e+10), Mercury (3.8636e+10, 4.2569e+10), Venus (1.0244e+11, 3.4391e+10)
+2,000,000 seconds (x,y): Earth (1.3774e+11, 5.8036e+10), Mars (2.2275e+11, 4.7841e+10), Mercury (-5.9865e+09, 5.7090e+10), Venus (8.5997e+10, 6.5196e+10)
 %%%%
 Question 2: For what values of timeStep, does the simulation no longer behave correctly? 
+The planets spin around the sun very fast and by the time the simulation Venus has flown off the screen.
+A possible reason could be that when dt is too large the planets don't update as fast on the screen (ie they spin so fast that their movement isn't continuous anymore, they lag) that eventually an older update crashes with a newer update and pushes Venus off the screen.
 %%%%
+
